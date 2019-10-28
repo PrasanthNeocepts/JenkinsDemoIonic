@@ -24,7 +24,9 @@ pipeline {
 
    stage('APK Sign') {
    steps {
-      sh 'jarsigner -storepass your_password -keystore keys/yourkey.keystore platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk nameApp'
+      //sh 'jarsigner -storepass your_password -keystore keys/yourkey.keystore platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk nameApp'
+      //sh 'npm run apiSign'
+      echo "Android"
    }
    }
 
