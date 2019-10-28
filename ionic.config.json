@@ -1,0 +1,7 @@
+{
+  "name": "jenkinsDemo",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
