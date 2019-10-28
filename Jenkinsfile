@@ -1,8 +1,8 @@
 pipeline {
    agent any
-      environment {
-         PATH='C:/Program Files/nodejs/'
-      }
+      // environment {
+      //    PATH='C:/Program Files/nodejs/'
+      // }
    stages {
       stage('NPM Setup') {
       steps {
@@ -12,13 +12,13 @@ pipeline {
 
    stage('IOS Build') {
    steps {
-      sh 'ionic cordova build ios --release'
+      sh 'ionic cordova build ios'
      } 
   }
 
    stage('Android Build') {
    steps {
-      sh 'ionic cordova build android --release'
+      sh 'ionic cordova build android'
    }
   }
 
