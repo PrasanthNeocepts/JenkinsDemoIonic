@@ -33,6 +33,11 @@ pipeline {
              git "https://github.com/PrasanthNeocepts/JenkinsDemoIonic.git"
           }
        }
+      stage('NPM Setup') {
+      steps {
+         sh 'npm install'
+      }
+      }
       }
 
       post {
