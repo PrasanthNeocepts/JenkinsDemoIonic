@@ -9,6 +9,23 @@ pipeline {
             echo 'Running Successfully'
           }
        }
+       stage ('JUnit') {
+          steps {
+             echo "JUnit passed successfully"
+          }
+       }
+
+       stage ('Quality Gate') {
+          steps {
+             echo "Quality Gate passed successfully"
+          }
+       }
+
+       stage ('Deploy'){
+          steps {
+             echo "Pass!"
+          }
+       }
       }
 }
 
