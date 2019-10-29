@@ -38,6 +38,30 @@ pipeline {
          bat 'npm install'
       }
       }
+
+      stage('Publish Firebase Web') {
+      steps {
+      bat 'firebase deploy --token "Your Token Key"'
+   }
+  }
+
+       stage('Run App') {
+        steps {
+         bat 'ionic serve'
+      }
+      }
+
+      stage('Publish iOS') {
+      steps {
+       echo "Publish iOS Action"
+    }
+   }
+
+   stage('Publish Android') {
+     steps {
+    echo "Publish Android API Action"
+   }
+  }
       }
 
       post {
