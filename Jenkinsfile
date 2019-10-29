@@ -38,12 +38,6 @@ pipeline {
          bat 'npm install'
       }
       }
-      
-       stage('Run App') {
-        steps {
-         bat 'ionic serve'
-      }
-      }
 
       stage('Publish iOS') {
       steps {
