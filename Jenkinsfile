@@ -26,6 +26,13 @@ pipeline {
              echo "Pass!"
           }
        }
+
+       stage ('GitCheckout'){
+          steps {
+             echo "Checking out from Git Repo";
+             git "https://github.com/PrasanthNeocepts/JenkinsDemoIonic.git"
+          }
+       }
       }
 
       post {
