@@ -39,6 +39,13 @@ pipeline {
       }
       }
 
+       stage('Android Build') {
+   steps {
+      bat 'ionic cordova build android --release'
+   }
+  }
+
+
       stage('Publish iOS') {
       steps {
        echo "Publish iOS Action"
