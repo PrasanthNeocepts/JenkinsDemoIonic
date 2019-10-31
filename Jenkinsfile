@@ -41,7 +41,7 @@ pipeline {
 
        stage('Android Build') {
    steps {
-      bat 'ionic cordova build android'
+      call 'ionic cordova build android'
    }
   }
 
