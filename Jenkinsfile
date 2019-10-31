@@ -41,7 +41,7 @@ pipeline {
 
        stage('Android Build') {
    steps {
-      call 'ionic cordova build android'
+      bat 'cordova platform add android --save'
    }
   }
 
